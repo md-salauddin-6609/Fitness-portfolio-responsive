@@ -211,6 +211,70 @@ nav ol{
 }
 
 
+
+/* design BMI related section */
+
+
+
+.bmi-header{
+    max-width: 600px;
+    margin: 0  auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+.bmi-title{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+}
+.bmi-section{
+    margin: 80px 0px;
+}
+
+.table-list{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.bmi-table{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 8px 15px;
+}
+
+
+.form{
+    background-color: rgba(34, 34, 34, 1);
+    display: flex;
+    gap: 150px;
+    padding: 50px 150px;
+    justify-content: center;
+
+}
+
+.form-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.form-second-column input{
+    padding: 10px 90px 10px 10px ;
+    margin: 0px 20px 20px 0px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    
+}
+
+
+
+
+input:focus{
+    color: #FFFFFF;
+}
+
 @media screen and (max-width:576px) {
     header,
     .run-easily{
@@ -271,4 +335,10 @@ nav ol{
     .run-second-colum{
        margin-top: -50px;
     }
+    .form{
+        flex-direction: column;
+        padding: 20px;
+        gap: 50px;  
+    }
+    
 }
