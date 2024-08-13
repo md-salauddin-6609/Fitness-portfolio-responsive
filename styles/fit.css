@@ -75,7 +75,8 @@ nav ol{
     display: flex;
     gap: 150px;
     background: linear-gradient(rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
-    box-shadow: 5px 5px 10px rgba(162, 157, 157, 0.25);
+    box-shadow: 0px 0px rgba(162, 157, 157, 0.25);
+    border-radius: 10px;
 
 }
 
@@ -139,13 +140,88 @@ nav ol{
     margin-right: -100px;
 }
 
+/* design habits related section */
+
+.habits{
+    margin: 80px 120px;
+}
+
+.habit-first-colum{
+    text-align: center;
+    max-width: 670px;
+    margin: 0 auto;
+}
+.habit-title{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0px;
+}
+
+.habit-second-colum{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.card{
+    max-width: 240px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    border-radius: 100px;
+    box-shadow: 2px 0px 5px 2px rgb(89, 87, 87);
+}
 
 
+
+/* design run related section */
+
+.run-easily{
+    margin: 0px 120px;
+}
+.run-container{
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 20px;
+    box-shadow: 2px 0px 5px 2px rgb(89, 87, 87);
+}
+
+.run-first-colum{
+    max-width: 450px;
+}
+.run-title{
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-top: ;
+    margin: 0px;
+}
+.run-second-colum img{
+    max-width: 370px;
+    max-height: 320px;
+    border-radius: 20px;
+}
 
 
 @media screen and (max-width:576px) {
-    header{
+    header,
+    .run-easily{
         margin: 0px 10px;
+    }
+    .habits{
+        margin: 80px 10px;
+    }
+    .habit-second-colum{
+        grid-template-columns: repeat(1, 1fr);
+
     }
     .banner-section{
         flex-direction: column;
@@ -183,7 +259,16 @@ nav ol{
     nav ol{
         display: inline;
     }
+    .run-container{
+        flex-direction: column;
+        padding: 32px;
+    }
+    .text-align{
+        padding: 16px 103px;
+        margin-left: 20px;
+    }
 
-
-
+    .run-second-colum{
+       margin-top: -50px;
+    }
 }
